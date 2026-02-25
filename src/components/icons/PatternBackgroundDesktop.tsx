@@ -1,6 +1,6 @@
-export default function PatternBackgroundDesktop() {
+export default function PatternBackgroundDesktop({ className }: { className?: string }) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="437">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 437" preserveAspectRatio="none" className={className}>
       <path
         fill="#D6E1FF"
         fillRule="evenodd"

@@ -1,6 +1,6 @@
-export default function PatternBackgroundMobile() {
+export default function PatternBackgroundMobile({ className }: { className?: string }) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="375" height="194">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375 194" preserveAspectRatio="none" className={className}>
       <path
         fill="#D6E1FF"
         fillRule="evenodd"
