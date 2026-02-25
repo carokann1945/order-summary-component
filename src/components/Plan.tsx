@@ -15,7 +15,9 @@ export default function Plan() {
             <p className="text-preset-4-medium text-gray-600 md:text-preset-3-medium">$59.99/year</p>
           </div>
         </div>
-        <p className="text-preset-4-bold text-blue-700 md:text-preset-3-bold">Change</p>
+        <p className="text-preset-4-bold text-blue-700 md:text-preset-3-bold cursor-pointer hover:text-purple-500">
+          Change
+        </p>
       </div>
     </div>
   );
