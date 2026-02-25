@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
-import localFont from 'next/font/local';
+import { Red_Hat_Display } from 'next/font/google';
 import './globals.css';
 
-const pretendard = localFont({
-  src: '../../public/fonts/PretendardVariable.woff2', // 폰트 파일 경로 설정
-  variable: '--font-pretendard', // css 변수명을 정의하여 Tailwind CSS 등에서 사용할 수 있음
+const redHatDisplay = Red_Hat_Display({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-red-hat-display',
 });
 
 export const metadata: Metadata = {
@@ -18,8 +19,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko" className={pretendard.variable}>
-      <body className="antialiased">{children}</body>
+    <html lang="en" className={redHatDisplay.variable}>
+      <body className="antialiased w-dvw h-dvh bg-blue-100 flex justify-center items-center">{children}</body>
     </html>
   );
 }
